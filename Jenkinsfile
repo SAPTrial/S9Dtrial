@@ -1,4 +1,4 @@
-@Library('piper-lib-os@v1.7.0') _
+library 'piper-lib-os'
 
 try{
   pipeline()
