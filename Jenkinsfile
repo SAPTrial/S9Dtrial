@@ -15,8 +15,7 @@ def pipeline(){
       gctsExecuteABAPUnitTests:
         host: 'http://qebui.js-soft.local:44300/'
         client: '100'
-        abapCredentialsId: 'S9D'
-        //repository: 'saptrial-s9dtrial'
+        abapCredentialsId: 'bla'
     }
   }
 }
