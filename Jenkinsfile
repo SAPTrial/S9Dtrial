@@ -12,9 +12,7 @@ def pipeline(){
       println "hello"
     }
     stage("test"){
-      gctsExecuteABAPUnitTests(
-        
-      ) 
+      gctsExecuteABAPUnitTests(script: this) 
     }
   }
 }
