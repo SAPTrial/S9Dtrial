@@ -2,7 +2,7 @@ library "piper"
 
 try{
   pipeline()
-} catch err {
+} catch(err) {
   onFailure(err)
 }
 
