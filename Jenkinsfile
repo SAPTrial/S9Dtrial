@@ -1,4 +1,4 @@
-library "piper"
+library "piper-lib-os"
 
 try{
   pipeline()
