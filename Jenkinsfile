@@ -17,7 +17,8 @@ def pipeline(){
         host: 'http://qebui.js-soft.local:44300/',
         client: '100',
         abapCredentialsId: 'aefa731d-72b4-455c-9674-a94a4edac482',
-        verbose: true
+        verbose: true,
+        repository: "S9Dtrial"
       ) 
     }
   }
