@@ -12,10 +12,13 @@ def pipeline(){
       println "hello"
     }
     stage("test"){
-      gctsExecuteABAPUnitTests:
-        host: 'http://qebui.js-soft.local:44300/'
-        client: '100'
-        abapCredentialsId: 'bla'
+      gctsExecuteABAPUnitTests(
+        script: this,
+        host: 'http://qebui.js-soft.local:44300/',
+        client: '100',
+        abapCredentialsId: 'bla',
+        verbose: true
+      ) 
     }
   }
 }
