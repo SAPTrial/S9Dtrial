@@ -16,7 +16,7 @@ def pipeline(){
         script: this,
         host: 'http://qebui.js-soft.local:44300',
         client: '100',
-        abapCredentialsId: 'aefa731d-72b4-455c-9674-a94a4edac482',
+        //abapCredentialsId: 'aefa731d-72b4-455c-9674-a94a4edac482',
         repository: 'saptrial-s9dtrial',
         verbose: true
       ) 
