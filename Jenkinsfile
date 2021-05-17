@@ -11,6 +11,9 @@ def pipeline(){
     stage("foo"){
       println "hello"
     }
+    stage("setup"){
+      setupCommonPipelineEnvironment(script: this)
+    }
     stage("test"){
       gctsExecuteABAPUnitTests(script: this) 
     }
