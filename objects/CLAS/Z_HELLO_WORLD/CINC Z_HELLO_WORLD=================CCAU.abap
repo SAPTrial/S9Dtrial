@@ -57,7 +57,7 @@ class ztcl_Hello_World implementation.
 
     cl_Abap_Unit_Assert=>assert_Equals(
       act   = data-key
-      exp   = 'Hallo'
+      exp   = 'Hello'
     ).
   endmethod.
 
