@@ -1,6 +1,6 @@
 *"* use this source file for your ABAP unit test classes
 
-class ztcl_Hello_World definition for testing
+class ltcl_hello_world definition for testing
   duration short
   risk level harmless
 .
@@ -27,14 +27,14 @@ class ztcl_Hello_World definition for testing
 *?</asx:abap>
   private section.
     data:
-      f_Cut type ref to z_Hello_World.  "class under test
+      f_Cut type ref to zcl_Hello_World.  "class under test
     methods: setup.
     methods: teardown.
     methods: execute for testing.
 endclass.       "ztcl_Hello_World
 
 
-class ztcl_Hello_World implementation.
+class ltcl_hello_world implementation.
   method setup.
 
 
@@ -51,13 +51,18 @@ class ztcl_Hello_World implementation.
 
   method execute.
 
-    data data type z_Hello_World=>ty_Data.
+    data data type zcl_Hello_World=>ty_Data.
 
-    data = z_Hello_World=>execute(  ).
+    data = zcl_Hello_World=>execute(  ).
 
     cl_Abap_Unit_Assert=>assert_Equals(
       act   = data-key
       exp   = 'Hello'
+    ).
+
+    cl_Abap_Unit_Assert=>assert_Equals(
+      act   = data-value
+      exp   = 'world'
     ).
   endmethod.
 
