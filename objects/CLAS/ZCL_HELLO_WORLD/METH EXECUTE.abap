@@ -1,4 +1,4 @@
   METHOD EXECUTE.
-    data-key = 'Hello'.
+    data-key = 'Hallo'.
     data-value = 'world'.
   ENDMETHOD.
